@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mae Snack - Premium Snack Delights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="snack-box">
+                <div class="snack"></div>
+            </div>
+            <p>Loading delicious snacks...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" data-aos="fade-down" data-aos-delay="200" data-aos-offset="0">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🍪</span>
+                    <span class="logo-text">Mae Snack</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link" data-i18n="nav_products">Products</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link" data-i18n="nav_testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                    <li class="nav-item cart-icon">
+                        <a href="#cart" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item lang-dropdown">
+                        <select id="lang-switcher" aria-label="Pilih Bahasa">
+                            <option value="id">Indonesia</option>
+                            <option value="en">English</option>
+                            <option value="zh">中文</option>
+                            <option value="ar">العربية</option>
+                            <option value="es">Español</option>
+                            <option value="fr">Français</option>
+                            <option value="de">Deutsch</option>
+                            <option value="ru">Русский</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                        </select>
+                    </li>
+                    <li class="nav-item theme-toggle">
+                        <button id="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="hamburger" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </h1>
+            <p class="hero-subtitle">Premium quality snacks crafted with love and tradition</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary" data-i18n="hero_explore">Explore Products</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about_title">Our Story</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">Delicious snacks with a rich heritage</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mae Snack kitchen" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h3 data-i18n="about_heading">Traditional Recipes, Modern Taste</h3>
+                    <p data-i18n="about_p1">Founded in 2010, Mae Snack began as a small family business with a passion for creating delicious, high-quality snacks using traditional recipes passed down through generations.</p>
+                    <p data-i18n="about_p2">Today, we combine these time-honored methods with modern production techniques to bring you the very best in snack foods, while maintaining our commitment to quality ingredients and authentic flavors.</p>
+                    
+                    <div class="progress-bars">
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span data-i18n="about_customer_satisfaction">Customer Satisfaction</span>
+                                <span class="progress-percent">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span data-i18n="about_natural_ingredients">Natural Ingredients</span>
+                                <span class="progress-percent">100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span data-i18n="about_family_recipes">Family Recipes</span>
+                                <span class="progress-percent">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="products_title">Our Products</h2>
+                <p class="section-subtitle" data-i18n="products_subtitle">Delicious treats for every occasion</p>
+            </div>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All Products</button>
+                <button class="filter-btn" data-filter="cookies" data-i18n="filter_cookies">Cookies</button>
+                <button class="filter-btn" data-filter="chips" data-i18n="filter_chips">Chips</button>
+                <button class="filter-btn" data-filter="nuts" data-i18n="filter_nuts">Nuts</button>
+                <button class="filter-btn" data-filter="special" data-i18n="filter_special">Special Editions</button>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80" alt="Chocolate Chip Cookies" loading="lazy">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="1"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="1"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title" data-i18n="product_classic_chip">Classic Chocolate Chip</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <p class="product-desc" data-i18n="desc_classic_chip">Our signature cookies with premium chocolate chips</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 5.990</span>
+                            <button class="add-to-cart" data-id="1" data-i18n="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1288&q=80" alt="Oatmeal Raisin Cookies" loading="lazy">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="2"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Oatmeal Raisin</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(94)</span>
+                        </div>
+                        <p class="product-desc">Hearty oatmeal cookies with plump raisins</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 5.490</span>
+                            <button class="add-to-cart" data-id="2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-category="chips">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1629661414968-804a785d5c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sea Salt Potato Chips" loading="lazy">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="3"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sea Salt Potato Chips</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(215)</span>
+                        </div>
+                        <p class="product-desc">Kettle-cooked chips with premium sea salt</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 3.990</span>
+                            <button class="add-to-cart" data-id="3">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-category="chips">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="BBQ Corn Chips" loading="lazy">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="4"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">BBQ Corn Chips</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(176)</span>
+                        </div>
+                        <p class="product-desc">Crunchy corn chips with smoky BBQ flavor</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 4.290</span>
+                            <button class="add-to-cart" data-id="4">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card" data-category="nuts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Honey Roasted Almonds" loading="lazy">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="5"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Honey Roasted Almonds</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(142)</span>
+                        </div>
+                        <p class="product-desc">Premium almonds coated with golden honey</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 7.990</span>
+                            <button class="add-to-cart" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card" data-category="nuts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1612528443702-f6741f70a049?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Spicy Cashews" loading="lazy">
+                        <div class="product-badge">Hot</div>
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="6"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="6"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Spicy Cashews</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <p class="product-desc">Crunchy cashews with a spicy kick</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 8.490</span>
+                            <button class="add-to-cart" data-id="6">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card" data-category="special">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Holiday Cookie Tin" loading="lazy">
+                        <div class="product-badge">Limited</div>
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="7"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="7"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Holiday Cookie Tin</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(87)</span>
+                        </div>
+                        <p class="product-desc">Assorted holiday cookies in decorative tin</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 12.990</span>
+                            <button class="add-to-cart" data-id="7">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card" data-category="special">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gift Box Collection" loading="lazy">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="8"><i class="fas fa-eye"></i></button>
+                            <button class="add-wishlist" data-id="8"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Gift Box Collection</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(64)</span>
+                        </div>
+                        <p class="product-desc">Premium selection of our best sellers</p>
+                        <div class="product-footer">
+                            <span class="product-price">Rp 24.990</span>
+                            <button class="add-to-cart" data-id="8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                <a href="#" class="btn btn-outline" data-i18n="view_all_products">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">More than just delicious snacks</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service_giftbox">Custom Gift Boxes</h3>
+                    <p class="service-desc" data-i18n="service_giftbox_desc">Create your own custom snack gift boxes for any occasion with our wide selection of products.</p>
+                    <a href="#" class="service-link" data-i18n="learn_more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="service-title">Subscription Service</h3>
+                    <p class="service-desc">Get your favorite snacks delivered regularly with our flexible subscription plans.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="service-title">Event Catering</h3>
+                    <p class="service-desc">Make your event memorable with our snack catering services for all group sizes.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="service-title">Corporate Gifting</h3>
+                    <p class="service-desc">Impress your clients and employees with premium snack gift packages.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="service-title">Custom Recipes</h3>
+                    <p class="service-desc">Work with us to create custom snack recipes tailored to your specific needs.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="service-title">Fast Delivery</h3>
+                    <p class="service-desc">Enjoy quick and reliable delivery services with real-time tracking.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="gallery_title">Our Gallery</h2>
+                <p class="section-subtitle" data-i18n="gallery_subtitle">A taste of what we offer</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Snack assortment" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="gallery_assortment">Assortment</h3>
+                        <button class="view-image" data-src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" alt="Cookie making" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="gallery_production">Production</h3>
+                        <button class="view-image" data-src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Packaging" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="gallery_packaging">Packaging</h3>
+                        <button class="view-image" data-src="https://images.unsplash.com/photo-1612203985729-70726954388c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Ingredients" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="gallery_ingredients">Ingredients</h3>
+                        <button class="view-image" data-src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Gift boxes" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="gallery_giftboxes">Gift Boxes</h3>
+                        <button class="view-image" data-src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80" alt="Team" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 data-i18n="gallery_team">Our Team</h3>
+                        <button class="view-image" data-src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Don't just take our word for it</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Mae Snack's chocolate chip cookies are absolutely divine! The perfect balance of chewy and crisp, with generous chocolate chunks. I order them every month for my family."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Regular Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The holiday cookie tin was a huge hit at our office party! Everyone loved the variety and quality. The packaging was beautiful too - will definitely order again."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <span>Office Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"I've tried many snack brands, but Mae Snack's products stand out for their quality ingredients and authentic flavors. The honey roasted almonds are my absolute favorite!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez">
+                                <div class="author-info">
+                                    <h4>Emily Rodriguez</h4>
+                                    <span>Food Blogger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"We use Mae Snack's corporate gifting service for our clients and they always impress. The presentation is elegant and the snacks are consistently delicious."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Wilson">
+                                <div class="author-info">
+                                    <h4>David Wilson</h4>
+                                    <span>Marketing Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The subscription service is so convenient! I love getting a surprise selection of snacks each month. It's introduced me to products I wouldn't have tried otherwise."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Jessica Lee">
+                                <div class="author-info">
+                                    <h4>Jessica Lee</h4>
+                                    <span>Subscription Member</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_what_makes_special">What makes Mae Snack products special?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_what_makes_special_desc">Our snacks are made using traditional family recipes with premium, natural ingredients. We never use artificial preservatives or flavors, and each product is crafted with attention to detail and quality.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_gluten_free_vegan">Do you offer gluten-free or vegan options?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_gluten_free_vegan_desc">Yes! We have a growing selection of gluten-free and vegan snacks. Look for the special dietary icons on our product pages, or contact us for specific recommendations based on your needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_shelf_life">How long do your products stay fresh?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_shelf_life_desc">Our products have a shelf life of 2-3 months when stored properly in a cool, dry place. Each package is stamped with a "best by" date so you can enjoy them at peak freshness.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_shipping_policy">What is your shipping policy?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_shipping_policy_desc">We ship nationwide with delivery times of 2-5 business days. Orders over Rp 500.000 qualify for free shipping. You'll receive tracking information as soon as your order ships.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_customize_gift_box">Can I customize my gift box?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_customize_gift_box_desc">Absolutely! Our online gift box builder lets you select exactly which products to include. For large or corporate orders, our team can help create completely custom assortments.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_wholesale_bulk">Do you offer wholesale or bulk pricing?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_wholesale_bulk_desc">Yes, we work with many retailers and corporate clients. Contact our sales team for wholesale pricing and custom packaging options for your business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label" data-i18n="stat_happy_customers">Happy Customers</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label" data-i18n="stat_unique_products">Unique Products</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label" data-i18n="stat_cities_served">Cities Served</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label" data-i18n="stat_industry_awards">Industry Awards</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 data-i18n="newsletter_title">Join Our Snack Community</h2>
+                    <p data-i18n="newsletter_desc">Subscribe to our newsletter for exclusive offers, new product announcements, and delicious inspiration.</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" data-i18n-placeholder="your_email_address" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary" data-i18n="subscribe">Subscribe</button>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="newsletter-consent" checked>
+                        <label for="newsletter-consent" data-i18n="newsletter_consent">I agree to receive marketing communications from Mae Snack</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3 data-i18n="contact_location_title">Our Location</h3>
+                            <p data-i18n="contact_location_desc">123 Snack Street, Foodville, FK 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3 data-i18n="contact_call_title">Call Us</h3>
+                            <p data-i18n="contact_call_desc">+1 (555) 123-4567</p>
+                            <p data-i18n="contact_call_hours">Mon-Fri: 9am-6pm EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3 data-i18n="contact_email_title">Email Us</h3>
+                            <p data-i18n="contact_email_desc">info@maesnack.com</p>
+                            <p data-i18n="contact_email_orders">orders@maesnack.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3 data-i18n="contact_follow_title">Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018106!2d-73.98784492423915!3d40.74844097138988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689784297909!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🍪</span>
+                        <span class="logo-text">Mae Snack</span>
+                    </div>
+                    <p class="footer-about">Premium quality snacks crafted with love and tradition since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Chips</a></li>
+                        <li><a href="#">Nuts</a></li>
+                        <li><a href="#">Special Editions</a></li>
+                        <li><a href="#">Gift Boxes</a></li>
+                        <li><a href="#">Subscription</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Wholesale Inquiries</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p data-i18n="footer_newsletter_desc">Subscribe to get updates on new products and special offers.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" data-i18n-placeholder="your_email_address" placeholder="Your email address">
+                        <button type="submit" data-i18n="subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; <span id="year"></span> Mae Snack. All Rights Reserved.
+                </div>
+                <div class="footer-backtop">
+                    <a href="#home" class="back-to-top">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3 data-i18n="cart_title">Your Cart</h3>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">
+                <i class="fas fa-shopping-cart"></i>
+                <p data-i18n="cart_empty_message">Your cart is empty</p>
+                <a href="#products" class="btn btn-outline">Continue Shopping</a>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span data-i18n="cart_subtotal_label">Subtotal:</span>
+                <span class="cart-subtotal">Rp 0.00</span>
+            </div>
+            <a href="#" class="btn btn-primary btn-checkout" data-i18n="cart_checkout_button">Proceed to Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Image Modal -->
+    <div class="image-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <img src="" alt="Modal Image">
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="quickview-modal">
+        <div class="quickview-content">
+            <button class="quickview-close"><i class="fas fa-times"></i></button>
+            <div class="quickview-body">
+                <!-- Content will be added dynamically -->
+            </div>
+        </div>
+    </div>
+    <div class="quickview-overlay"></div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-content">
+            <p class="toast-message" data-i18n="toast_product_added">Product added to cart successfully!</p>
+        </div>
+        <button class="toast-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6278177527" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="translation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true
+      });
+    </script>
+</body>
+</html>
