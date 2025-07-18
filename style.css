@@ -2795,3 +2795,19 @@ img {
     transform: translateX(0);
   }
 }
+
+@media (max-width: 576px) {
+  .hero-buttons {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-buttons .btn {
+    width: 100% !important;
+    min-width: 0;
+    margin: 0 auto !important;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+  }
+}
