@@ -1,5 +1,6 @@
 // === MULTI LANGUAGE SYSTEM ===
 
+// Define translations for multiple languages
 const translations = {
     en: {
         // Navbar
@@ -599,30 +600,5 @@ const translations = {
     }
 };
 
-function setLanguage(lang) {
-    localStorage.setItem('lang', lang);
-    const dict = translations[lang] || translations['en'];
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (dict[key]) el.textContent = dict[key];
-    });
-    document.querySelectorAll('input[type="email"]').forEach(input => {
-        if (dict.your_email_address) input.placeholder = dict.your_email_address;
-    });
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(input => {
-        const key = input.getAttribute('data-i18n-placeholder');
-        if (dict[key]) input.placeholder = dict[key];
-    });
-}
-
-const langSwitcher = document.getElementById('lang-switcher');
-if (langSwitcher) {
-    langSwitcher.addEventListener('change', function() {
-        setLanguage(this.value);
-    });
-    // Set default language
-    const savedLang = localStorage.getItem('lang') || 'id';
-    langSwitcher.value = savedLang;
-    setLanguage(savedLang);
-}
+// No need to export translations as it's used directly in the global scope
 // === END MULTI LANGUAGE ===

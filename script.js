@@ -1,3 +1,6 @@
+// translations is defined in translation.js which is loaded before this script
+// No need to import it as it's already available in the global scope
+
 document.addEventListener('DOMContentLoaded', function() {
     // Preloader
     const preloader = document.querySelector('.preloader');
@@ -671,105 +674,7 @@ function formatRupiah(angka) {
 }
 
 // === MULTI LANGUAGE SYSTEM ===
-const translations = {
-    en: {
-        nav_home: 'Home', nav_about: 'About', nav_products: 'Products', nav_services: 'Services', nav_gallery: 'Gallery', nav_testimonials: 'Testimonials', nav_contact: 'Contact',
-        hero_subtitle: 'Premium quality snacks crafted with love and tradition',
-        hero_explore: 'Explore Products', hero_contact: 'Contact Us',
-        product_classic_chip: 'Classic Chocolate Chip',
-        desc_classic_chip: 'Our signature cookies with premium chocolate chips',
-        add_to_cart: 'Add to Cart',
-        // FAQ
-        faq_what_makes_special: 'What makes Mae Snack products special?',
-        faq_what_makes_special_desc: 'Our snacks are made using traditional family recipes with premium, natural ingredients. We never use artificial preservatives or flavors, and each product is crafted with attention to detail and quality.',
-        faq_gluten_free_vegan: 'Do you offer gluten-free or vegan options?',
-        faq_gluten_free_vegan_desc: 'Yes! We have a growing selection of gluten-free and vegan snacks. Look for the special dietary icons on our product pages, or contact us for specific recommendations based on your needs.',
-        faq_shelf_life: 'How long do your products stay fresh?',
-        faq_shelf_life_desc: 'Our products have a shelf life of 2-3 months when stored properly in a cool, dry place. Each package is stamped with a "best by" date so you can enjoy them at peak freshness.',
-        faq_shipping_policy: 'What is your shipping policy?',
-        faq_shipping_policy_desc: 'We ship nationwide with delivery times of 2-5 business days. Orders over Rp 500.000 qualify for free shipping. You\'ll receive tracking information as soon as your order ships.',
-        faq_customize_gift_box: 'Can I customize my gift box?',
-        faq_customize_gift_box_desc: 'Absolutely! Our online gift box builder lets you select exactly which products to include. For large or corporate orders, our team can help create completely custom assortments.',
-        faq_wholesale_bulk: 'Do you offer wholesale or bulk pricing?',
-        faq_wholesale_bulk_desc: 'Yes, we work with many retailers and corporate clients. Contact our sales team for wholesale pricing and custom packaging options for your business needs.',
-        // Stats
-        stat_happy_customers: 'Happy Customers',
-        stat_unique_products: 'Unique Products',
-        stat_cities_served: 'Cities Served',
-        stat_industry_awards: 'Industry Awards',
-        // Newsletter
-        newsletter_title: 'Join Our Snack Community',
-        newsletter_desc: 'Subscribe to our newsletter for exclusive offers, new product announcements, and delicious inspiration.',
-        // Contact
-        contact_location_title: 'Our Location',
-        contact_location_desc: '123 Snack Street, Foodville, FK 12345',
-        contact_call_title: 'Call Us',
-        contact_call_desc: '+1 (555) 123-4567',
-        contact_call_hours: 'Mon-Fri: 9am-6pm EST',
-        contact_email_title: 'Email Us',
-        contact_email_desc: 'info@maesnack.com',
-        contact_email_orders: 'orders@maesnack.com',
-        contact_follow_title: 'Follow Us',
-        // Footer
-        footer_newsletter_desc: 'Subscribe to get updates on new products and special offers.',
-        // Cart
-        cart_title: 'Your Cart',
-        cart_empty_message: 'Your cart is empty',
-        cart_subtotal_label: 'Subtotal:',
-        cart_checkout_button: 'Proceed to Checkout',
-        // Toast
-        toast_product_added: 'Product added to cart successfully!',
-    },
-    id: {
-        nav_home: 'Beranda', nav_about: 'Tentang', nav_products: 'Produk', nav_services: 'Layanan', nav_gallery: 'Galeri', nav_testimonials: 'Testimoni', nav_contact: 'Kontak',
-        hero_subtitle: 'Cemilan premium dibuat dengan cinta dan tradisi',
-        hero_explore: 'Lihat Produk', hero_contact: 'Hubungi Kami',
-        product_classic_chip: 'Cokelat Klasik',
-        desc_classic_chip: 'Kue kering khas kami dengan cokelat premium',
-        add_to_cart: 'Tambah ke Keranjang',
-        // FAQ
-        faq_what_makes_special: 'Apa yang membuat produk Mae Snack istimewa?',
-        faq_what_makes_special_desc: 'Cemilan kami dibuat dengan resep keluarga tradisional dan bahan alami premium. Tanpa pengawet atau perasa buatan, setiap produk dibuat dengan perhatian pada kualitas.',
-        faq_gluten_free_vegan: 'Apakah ada pilihan bebas gluten atau vegan?',
-        faq_gluten_free_vegan_desc: 'Ya! Kami punya pilihan cemilan bebas gluten dan vegan. Cari ikon khusus di halaman produk, atau hubungi kami untuk rekomendasi sesuai kebutuhan Anda.',
-        faq_shelf_life: 'Berapa lama produk tetap segar?',
-        faq_shelf_life_desc: 'Produk kami tahan 2-3 bulan jika disimpan di tempat sejuk dan kering. Setiap kemasan diberi tanggal "baik sebelum" agar Anda menikmatinya dalam kondisi terbaik.',
-        faq_shipping_policy: 'Bagaimana kebijakan pengiriman?',
-        faq_shipping_policy_desc: 'Kami kirim ke seluruh Indonesia, estimasi 2-5 hari kerja. Pesanan di atas Rp 500.000 gratis ongkir. Anda akan menerima info resi setelah pesanan dikirim.',
-        faq_customize_gift_box: 'Bisakah saya custom gift box?',
-        faq_customize_gift_box_desc: 'Tentu! Fitur gift box online kami memungkinkan Anda memilih produk sesuai keinginan. Untuk pesanan besar/kantor, tim kami siap membantu custom.',
-        faq_wholesale_bulk: 'Apakah ada harga grosir atau partai besar?',
-        faq_wholesale_bulk_desc: 'Ya, kami melayani banyak toko dan perusahaan. Hubungi tim sales untuk harga grosir dan opsi kemasan khusus.',
-        // Stats
-        stat_happy_customers: 'Pelanggan Puas',
-        stat_unique_products: 'Produk Unik',
-        stat_cities_served: 'Kota Terlayani',
-        stat_industry_awards: 'Penghargaan Industri',
-        // Newsletter
-        newsletter_title: 'Gabung Komunitas Snack Kami',
-        newsletter_desc: 'Daftar newsletter untuk promo, info produk baru, dan inspirasi lezat.',
-        // Contact
-        contact_location_title: 'Lokasi Kami',
-        contact_location_desc: 'Jl. Snack No.123, Foodville, FK 12345',
-        contact_call_title: 'Telepon',
-        contact_call_desc: '+62 812-3456-7890',
-        contact_call_hours: 'Senin-Jumat: 09.00-18.00 WIB',
-        contact_email_title: 'Email',
-        contact_email_desc: 'info@maesnack.com',
-        contact_email_orders: 'orders@maesnack.com',
-        contact_follow_title: 'Ikuti Kami',
-        // Footer
-        footer_newsletter_desc: 'Daftar untuk update produk baru dan promo spesial.',
-        // Cart
-        cart_title: 'Keranjang Anda',
-        cart_empty_message: 'Keranjang Anda kosong',
-        cart_subtotal_label: 'Subtotal:',
-        cart_checkout_button: 'Checkout via WhatsApp',
-        // Toast
-        toast_product_added: 'Produk berhasil ditambahkan ke keranjang!',
-    },
-    zh: { /* ... */ }, ar: { /* ... */ }, es: { /* ... */ }, fr: { /* ... */ }, de: { /* ... */ }, ru: { /* ... */ }, ja: { /* ... */ }, ko: { /* ... */ }
-};
+// translations is imported at the top of the file
 
 function setLanguage(lang) {
     localStorage.setItem('lang', lang);
