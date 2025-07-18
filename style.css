@@ -2441,15 +2441,19 @@ img {
     }
     
     .hero-buttons {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         gap: 18px;
     }
     
     .hero-buttons .btn {
-        width: 90%;
-        margin: 0 auto;
+        width: 90% !important;
+        margin: 0 auto !important;
         font-size: 1.1rem;
+        display: block;
+        text-align: center;
     }
     
     .btn {
@@ -2777,17 +2781,17 @@ img {
     animation: none;
   }
   .nav-menu.active {
-    animation: slideDownMenu 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    animation: slideInRightMenu 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 }
 
-@keyframes slideDownMenu {
+@keyframes slideInRightMenu {
   from {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateX(60px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
