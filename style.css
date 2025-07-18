@@ -436,6 +436,14 @@ img {
     pointer-events: auto;
     transition-delay: 0s, 0.1s;
   }
+  .nav-menu {
+    align-items: center;
+    text-align: center;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .bar {
@@ -2405,7 +2413,8 @@ img {
     
     .hero-buttons {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 18px;
     }
     
     .btn {
